@@ -4,11 +4,8 @@ This script compresses PDF files in a directory that are larger than a specified
 
 ## Usage
 
-```bash
-$ ./compress_pdf.sh [threshold]
-```
-
-Compresses PDF files in a directory larger than a specified threshold. If the threshold is not provided, a default value of 500MB is used.
+1. Ensure the script has execution permission: `$ chmod +x PDFSlim.sh`
+2. Run the script: `$ ./PDFSlim.sh [threshold]`
 
 ### Options
 
