@@ -29,7 +29,7 @@ In the example above, the script compresses PDF files larger than 100MB in the c
 To display the usage message and available options, use the `--help` or `-h` flag:
 
 ```bash
-$ ./compress_pdf.sh --help|-h
+$ ./compress_pdf.sh --help
 ```
 
 The usage message provides an overview of the script's purpose, usage format, and available options.
