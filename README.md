@@ -4,8 +4,8 @@ This script compresses PDF files in a directory that are larger than a specified
 
 ## Usage
 
-1. Ensure the script has execution permission: `$ chmod +x PDFSlim.sh`
-2. Run the script: `$ ./PDFSlim.sh [threshold]`
+1. Ensure the script has execution permission: `$ chmod +x shrinkdoc.sh`
+2. Run the script: `$ ./shrinkdoc.sh [threshold]`
 
 ### Options
 
@@ -13,9 +13,14 @@ This script compresses PDF files in a directory that are larger than a specified
 
 ## Description
 
-The PDF Compression Script is a Bash script that automates the compression of PDF files. It utilizes the `find` command to locate PDF files in a given directory that exceed the specified threshold size. By default, the threshold is set to 500MB.
+The PDF Compression Script is a Bash script that automates the compression of PDF files. It utilizes the `find` command to locate PDF files in a given directory that exceed the specified threshold size. By default, the threshold is set to 500MB. The uncompressed PDFs are moved to a separate directory named "not_compressed" for safekeeping and organizational purposes.
 
-To use the script, navigate to the directory containing the PDF files you want to compress and run the `compress_pdf.sh` script. If you want to set a custom threshold, specify the desired threshold value in megabytes as a command-line argument. For instance:
+To use the script, navigate to the directory containing the PDF files you want to compress and run the `compress_pdf.sh` script. If you want to set a custom threshold, specify the desired threshold value in kilobytes (KB) or megabytes (MB). When executing the script, use the following formats:
+
+- Megabytes (MB): `[threshold]M`
+  - Example: `./shrinkdoc.sh 50M` (for a threshold of 50MB)
+- Kilobytes (KB): `[threshold]k`
+  - Example: `./shrinkdoc.sh 1000k` (for a threshold of 1000 kilobytes, or 1MB)
 
 ```bash
 $ ./compress_pdf.sh 100M
