@@ -36,4 +36,4 @@ $ ./compress_pdf.sh --help
 
 The usage message provides an overview of the script's purpose, usage format, and available options.
 
-Please note that the script assumes the presence of the `find` command and ghostscript (e.g., `qpdf`). Make sure these dependencies are installed on your system for the script to work correctly.
+Please note that the script assumes the presence of the `find` command and `ghostscript`. Make sure these dependencies are installed on your system for the script to work correctly.
